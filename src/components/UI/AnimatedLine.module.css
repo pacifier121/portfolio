@@ -1,0 +1,11 @@
+.animated-line{
+   border-radius: 2rem; 
+   height: 0.5rem;
+   background-color: lightskyblue;
+   width: 4rem;
+   transition: 0.2s ease-in-out;
+}
+
+.animated-line:hover{
+   width: 10rem; 
+}

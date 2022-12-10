@@ -5,5 +5,14 @@
    color: black;
    padding: 1.5rem 5rem;
    border-radius: 0.5rem;
-   box-shadow: 0px 0px 1.5rem #bbb;
+   box-shadow: 0px 2px 0.5rem #bbb;
+   max-width:fit-content;
+   transition: 0.2s ease-in;
+   user-select: none;
+   position: relative;
+}
+
+.button:hover{
+   bottom: 1rem;
+   cursor:pointer;
 }
