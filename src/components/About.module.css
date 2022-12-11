@@ -1,11 +1,6 @@
 .outer-container{
-    margin-top: 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: auto;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    width: 65%;
     gap: 5rem;
 }
 
