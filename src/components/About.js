@@ -3,7 +3,7 @@ import AnimatedLine from "./UI/AnimatedLine";
 import Button from "./UI/Button";
 
 const About = (props) => {
-    return ( <div className={classes["outer-container"]}>
+    return ( <div className={classes["outer-container"] + " " + (props.theme === "light" ? classes["about-light"] : classes["about-dark"])}>
         <div className={classes["about-me"]}>
             <h1>About Me</h1>
             <AnimatedLine /> 

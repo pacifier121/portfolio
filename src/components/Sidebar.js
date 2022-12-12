@@ -1,8 +1,8 @@
 import classes from './Sidebar.module.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Sidebar = () => {
-    return ( <div className={classes['sidebar']}>
+const Sidebar = (props) => {
+    return ( <div className={classes['sidebar'] + " " + (props.theme === "light" ? classes["sidebar-light"] : classes["sidebar-dark"])}>
         <a href="#">
             {/* LinkedIn */}
             <i className={classes['social-icon']} class="fa-brands fa-linkedin-in"></i>

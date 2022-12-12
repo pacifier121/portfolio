@@ -5,6 +5,10 @@
     margin-bottom: -5rem;
 }
 
+.footer-dark{
+    border-top: 5px solid white;
+}
+
 .about-me{
     grid-column-start: 1;
     grid-column-end: 5;

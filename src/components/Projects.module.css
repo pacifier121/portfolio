@@ -1,6 +1,14 @@
 .outer-container{
 }
 
+.project-light{
+    color: black;    
+}
+
+.project-dark{
+    color: white;    
+}
+
 .header{
     text-align: center;
     display: flex;
@@ -28,8 +36,51 @@
     justify-content: space-evenly;
 }
 
+@media (max-width: 700px){
+    .projects{
+        gap: 2rem;
+    }
+}
+
 .project-container{
+    padding: 1rem;
     width: 30%;
-    height: 20rem; 
+    min-height: 30rem; 
     background-color: gray;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    border-radius: 1rem;
+}
+
+.project-container:hover{
+    transform: scale(1.2);
+}
+
+.project-container:hover img{
+    filter: grayscale(0%);
+}
+
+.project-container h2{
+    margin: 0;
+}
+                
+.project-description{
+    color: white;
+}
+
+.project-container p{
+    margin: 0.2rem;
+}
+
+.project-container a{
+    text-decoration: none;
+}
+
+.project-container img{
+    border-radius: 1rem;
+    width: auto;
+    height: auto;
+    filter: grayscale(100%);
+    transition: 0.4s ease-in;
 }

@@ -1,8 +1,8 @@
 import classes from './Navbar.module.css';
 
 
-const Navbar = () => {
-    return ( <nav className={classes['nav']}>
+const Navbar = (props) => {
+    return ( <nav className={classes['nav'] + " " + (props.theme === "light" ? classes["nav-light"] : classes["nav-dark"])}>
         <div className={classes['profile']}>
             <img src="myResumePic.jpg" />
             <h2>PRASHANT RAWAT</h2>
