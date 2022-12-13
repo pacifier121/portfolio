@@ -10,10 +10,14 @@ import {useState } from "react";
 import './App.css';
 
 const App = () => {
-    const [theme, setTheme] = useState("dight");
+    const [theme, setTheme] = useState("light");
+    
+    const themeChangeHandler = () => {
+        setTheme(theme === "light" ? "dark" : "light");
+    }
 
     return (<>
-        <Navbar theme={theme} />
+        <Navbar theme={theme} onThemeChange={themeChangeHandler} />
         <Home theme={theme} />
         <Container bg={theme === "light" ? "#fafafa": "#111"}>
             <About theme={theme} />

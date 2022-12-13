@@ -8,7 +8,7 @@ const Home = (props) => {
         <div className={classes['inner-container']}>
             <h1 className="head-text">Hey, I'm Prashant Rawat</h1>
             <h2 className="subhead-text">And I'm a Web Developer</h2>
-            <Button>PROJECTS</Button>
+            <Button theme={props.theme}>PROJECTS</Button>
         </div>
     </div> );
 }

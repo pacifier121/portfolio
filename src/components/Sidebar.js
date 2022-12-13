@@ -1,5 +1,4 @@
 import classes from './Sidebar.module.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Sidebar = (props) => {
     return ( <div className={classes['sidebar'] + " " + (props.theme === "light" ? classes["sidebar-light"] : classes["sidebar-dark"])}>

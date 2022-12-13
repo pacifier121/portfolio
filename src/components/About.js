@@ -18,7 +18,7 @@ const About = (props) => {
             content related to Web Development and Programming.</p>
             <p>I'm open to Job opportunities where I can contribute, learn and grow. 
             If you have a good opportunity that matches my skills and experience then don't hesitate to contact me. </p>
-            <Button>Contact</Button>
+            <Button theme={props.theme}>Contact</Button>
         </div>
         <div className={classes["my-skills"]}>
             <h2>My Skills</h2>

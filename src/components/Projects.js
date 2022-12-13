@@ -34,7 +34,7 @@ const Projects = (props) => {
         </div>
         <div className={classes["projects"]}>
            {projects.map((project) => (
-                <ProjectContainer project={project} />
+                <ProjectContainer key={project.title} project={project} />
            ))} 
         </div>
     </div>);
