@@ -7,8 +7,10 @@ const ProjectContainer = ({project}) => {
             <h2>{project.title}</h2>
                 <img src={project.img} />
                 <p className={classes["project-description"]}>{project.description}</p>
-                <p><a href={project.link}>Project Link</a></p>
-                <p><a href={project.link}>Live Link</a></p>
+                <div className={classes["links"]}>
+                    <p><a target="_blank" href={project.project_link}>Project Link</a></p>
+                    <p><a target="_blank" href={project.live_link}>Live Link</a></p>
+                </div>
            </div>
      );
 }
@@ -22,8 +24,17 @@ const DUMMY = [
     {title: "Project #5", description: "Something about project", link: "https://somelink.com", img: "./images/Wallpaper - 05.jpg"},
 ]
 
+const myProjects = [
+    {title: "Algorithm Visualizer", description: "This app made with React.js is built to give a simulation of some simple and popular algorithms in computer science", 
+        project_link: "https://github.com/pacifier121/algo-box", live_link: "https://pacifier121.github.io/algo-box/", img: "./images/algo-visualizer.png"},
+    {title: "Digit Classifier", description: "An ML model that classifies a digit drawn on screen from 0 to 9.", 
+        project_link: "https://github.com/pacifier121/digit-classifier", live_link: "https://pacifire-digit-classifier.herokuapp.com/", img: "./images/digit-classifier.png"},
+    {title: "Webpage Clone", description: "Made landing pages of some websites for practice", 
+        project_link: "https://github.com/pacifier121/Spacex-page-clone", live_link: "https://pacifier121.github.io/Spacex-page-clone/", img: "./images/website-clone.png"},
+]
+
 const Projects = (props) => {
-    const projects = DUMMY; 
+    const projects = myProjects; 
 
     return (<div id="projects" className={classes["outer-container"] + " " + (props.theme === "light" ? classes["project-light"] : classes["project-dark"])}>
         <div className={classes["header"]}>

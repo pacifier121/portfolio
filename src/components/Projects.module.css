@@ -1,5 +1,4 @@
-.outer-container{
-}
+.outer-container{ }
 
 .project-light{
     color: black;    
@@ -51,6 +50,7 @@
     flex-direction: column;
     transition: 0.3s ease-in-out;
     border-radius: 1rem;
+    user-select: none;
 }
 
 .project-container:hover{
@@ -62,19 +62,42 @@
 }
 
 .project-container h2{
-    margin: 0;
+    margin: 0.2rem 0 0.5rem 0;
+}
+
+.project-container p{
+    margin: 0.5rem;
 }
                 
 .project-description{
     color: white;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.project-container p{
-    margin: 0.2rem;
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
 }
 
-.project-container a{
+.project-container:hover .links{
+    opacity: 1;
+}
+
+.links a{
     text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.links a:hover{
+    background-color: midnightblue;
+    color: white;
 }
 
 .project-container img{
@@ -83,4 +106,5 @@
     height: auto;
     filter: grayscale(100%);
     transition: 0.4s ease-in;
+    margin-bottom: 1rem;
 }
