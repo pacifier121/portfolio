@@ -1,12 +1,13 @@
 import classes from "./About.module.css"
-import AnimatedLine from "./UI/AnimatedLine";
+import AnimatedHeader from "./UI/AnimatedHeader";
 import Button from "./UI/Button";
 
 const About = (props) => {
-    return ( <div className={classes["outer-container"] + " " + (props.theme === "light" ? classes["about-light"] : classes["about-dark"])}>
+    return ( <div id="about" className={classes["outer-container"] + " " + (props.theme === "light" ? classes["about-light"] : classes["about-dark"])}>
         <div className={classes["about-me"]}>
+            <AnimatedHeader>
             <h1>About Me</h1>
-            <AnimatedLine /> 
+            </AnimatedHeader>
             <h3>Here is a quick glance of my skills about coding and tech</h3>
         </div>
         <div className={classes["know-me"]}>

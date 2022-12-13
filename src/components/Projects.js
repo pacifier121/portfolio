@@ -1,5 +1,5 @@
 import classes from "./Projects.module.css";
-import AnimatedLine from "./UI/AnimatedLine";
+import AnimatedHeader from "./UI/AnimatedHeader";
 
 const ProjectContainer = ({project}) => {
     return ( 
@@ -25,10 +25,11 @@ const DUMMY = [
 const Projects = (props) => {
     const projects = DUMMY; 
 
-    return (<div className={classes["outer-container"] + " " + (props.theme === "light" ? classes["project-light"] : classes["project-dark"])}>
+    return (<div id="projects" className={classes["outer-container"] + " " + (props.theme === "light" ? classes["project-light"] : classes["project-dark"])}>
         <div className={classes["header"]}>
-            <h1>Projects</h1>
-            <AnimatedLine />
+            <AnimatedHeader>
+                <h1>Projects</h1>
+            </AnimatedHeader>
             <h3>Here you will find some of the personal and clients projects that I created with each project containing<br/>
                 its own case study</h3>
         </div>

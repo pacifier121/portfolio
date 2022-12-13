@@ -1,0 +1,12 @@
+.animated-header:hover .animated-line{
+   width: 100%; 
+   background-color: lightskyblue;
+}
+
+.animated-line{
+   border-radius: 2rem; 
+   height: 0.5rem;
+   width: 0.5rem;
+   background-color: transparent;
+   transition: 0.2s ease-in-out;
+}

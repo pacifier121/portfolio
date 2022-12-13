@@ -41,6 +41,12 @@
    gap: 2rem;
 }
 
+@media (max-width: 1500px){
+    .contact-form-container{
+        margin: 0;
+    }
+}
+
 .contact-form-container div{
     display: flex;
     flex-direction: column;
@@ -79,9 +85,12 @@
 .contact-form-container div textarea{
     border: none;
     height: 25rem;
+    min-height: 20rem;
     font-size: 1.5rem;
     padding: 2rem;
     border-radius: 0.5rem;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .contact-form-container div textarea:hover,
@@ -97,4 +106,8 @@
 .contact-dark .contact-form-container{
     background-color: #222;
     box-shadow: 0px 0px 2rem #444;
+}
+
+.submit-button-container div{
+    margin-left: auto;
 }
