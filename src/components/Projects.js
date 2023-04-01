@@ -9,28 +9,20 @@ const ProjectContainer = ({project}) => {
                 <p className={classes["project-description"]}>{project.description}</p>
                 <div className={classes["links"]}>
                     <p><a target="_blank" href={project.project_link}>Project Link</a></p>
-                    <p><a target="_blank" href={project.live_link}>Live Link</a></p>
+                    {project.live_link && <p><a target="_blank" href={project.live_link}>Live Link</a></p>}
+                    {project.demo_link && <p><a target="_blank" href={project.demo_link}>Demo Link</a></p>}
                 </div>
            </div>
      );
 }
  
-
-const DUMMY = [
-    {title: "Project #1", description: "Something about project", link: "https://somelink.com", img: "./images/Wallpaper - 01.jpg"},
-    {title: "Project #2", description: "Something about project", link: "https://somelink.com", img: "./images/Wallpaper - 02.jpg"},
-    {title: "Project #3", description: "Something about project", link: "https://somelink.com", img: "./images/Wallpaper - 03.jpg"},
-    {title: "Project #4", description: "Something about project", link: "https://somelink.com", img: "./images/Wallpaper - 04.jpg"},
-    {title: "Project #5", description: "Something about project", link: "https://somelink.com", img: "./images/Wallpaper - 05.jpg"},
-]
-
 const myProjects = [
+    {title: "ChatOcean", description: "Social Media Application with realtime chat (made with ReactJs, NodeJs, Socket.io, ExpressJs)", 
+        project_link: "https://github.com/pacifier121/chatocean", demo_link: "https://www.youtube.com/watch?v=nsAT9Fd6M2M", live_link: "", img: "./images/sample_chatocean.png"},
     {title: "Algorithm Visualizer", description: "This app made with React.js is built to give a simulation of some simple and popular algorithms in computer science", 
         project_link: "https://github.com/pacifier121/algo-box", live_link: "https://pacifier121.github.io/algo-box/", img: "./images/algo-visualizer.png"},
     {title: "Digit Classifier", description: "An ML model that classifies a digit drawn on screen from 0 to 9.", 
-        project_link: "https://github.com/pacifier121/digit-classifier", live_link: "https://pacifire-digit-classifier.herokuapp.com/", img: "./images/digit-classifier.png"},
-    {title: "Webpage Clone", description: "Made landing pages of some websites for practice", 
-        project_link: "https://github.com/pacifier121/Spacex-page-clone", live_link: "https://pacifier121.github.io/Spacex-page-clone/", img: "./images/website-clone.png"},
+        project_link: "https://github.com/pacifier121/digit-classifier", live_link: "https://digit-classifier-10ya.onrender.com", img: "./images/digit-classifier.png"},
 ]
 
 const Projects = (props) => {
